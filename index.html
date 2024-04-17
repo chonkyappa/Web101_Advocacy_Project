@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon"  href="pictures/page_icon.ico">
+
+  <title >Cats Need You!</title>
+  <div class="header-container">
+    <img id="header-img" src="/pictures/title_pic.png" alt="a pink sideways cat">
+    <h1>Operation Catnip</h1>
+    <h3 id="headerSubtitle">Revolutionizing Communities through TNR</h3>
+    
+    <div class="header-button-container">
+      <a href="https://lifelineanimal.org/donate-today/">
+        <button class="header-button" type="button">Donate</button>
+      </a>
+      <a>
+        <button class="header-button" type="button">Sign Our Petition</button>
+      </a>
+      
+    </div>
+  </div>
+  
+</head>
+
+
+<body>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+        <p id="modal-text">
+          PLACEHOLDER TEXT
+        </p>
+        <!-- button here (stretch feature) -->
+         <button id="closeModalBtn" type="button">Close Me!</button>
+      </div>
+      
+      <!-- image here-->
+      <img id="modal-gif" src="https://media1.tenor.com/m/WjoUFaID8ScAAAAC/cat-cute.gif" alt="a cat saying thank you">
+    </div>
+
+  </div>
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#aboutTitle">About</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#newsArticles">Articles</a></li>
+      <li><a href="#petitions">Sign Our Petition</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+      <li><button id="reduceMotionBtn">Reduce Motion</button>
+      </li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+
+
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  
+  <br>
+  <div class="revealable" id="aboutTitle">
+    <h2>About My Topic</h2>
+  </div>
+   
+    <!-- About my Topic!
+          add more later-->
+<div class="about-info-container revealable">
+    <p>
+      In a perfect world, all of the cats and dogs would be living happily with their forever home. In reality, cats, and other animals, live outside where they're subject to dangers and uncertainty of their next meal. For example, feral cat colonies are often seen in urban, suburban, and rural developments like cities and farms. The community may tackle this issue by placing them into shelters, where they are kept until they are ready to be adopted. However, this is not the best solution as shelters have limited space and as a result, may choose to use lethal ways of controlling the population.
+      And this is where Operation Catnip comes into play. Instead of shelters, we will be using TNR to control the population. TNR involves trapping the animals, neuturing them, and returning them back to where they were before. In some cases, the animals may be put up for adoption or placed in a foster home. Either way, the animals are being controlled and the community is being revolutionized.
+    </p>
+  
+  <br>
+  <div class="image-info-container">
+      <div class="info-container">
+        <img class="about-images"src="pictures/cats_overcrowded_shelter.jpg" alt="image of overcrowding cats in a shelter"> 
+        <p>
+          Too many cats in a shelter presents more issues than it solves. According to the Humane Society, they are more likely to get sick when enclosed with several other cats, in which the shelter may choose to euthanize them.
+        </p>
+      </div>
+    
+      <div class="info-container">
+        <img class="about-images"src="pictures/feral_cats_outside.jpg" alt="image of feral cats outside" > 
+        <p>
+          As for those ones left outside, they pose a risk to both humans and the environment. Humans may contract diseases and be left to deal with destruction of their property. The environment has also been severely affected by cats as they have been know known to exterminate various species.
+        </p>
+      </div>
+  </div>
+</div>
+  
+  <br>
+
+<h2 class="revealable" id="videos">Videos</h2>  
+  
+  <div class="videos-container revealable">
+    <h3 class="sectionSubTitle">Here's a quick video about TNR!</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IarsSTLUdTw?si=cqisq0fpP46N-YHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  
+    </iframe>
+
+    <h3 class="sectionSubTitle">
+      See how people worldwide helped Teddy, a street cat rescued in Brooklyn, NY!
+    </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ksrTNt__MJg?si=c6GpVFY38d3y6ETD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+  </div>
+
+  <br>
+
+  <h2 class = "revealable" id ="newsArticles">News Articles</h2>
+  <div class="article-container revealable">
+    <a class="articleLinks"
+        href="https://news-bulletin.com/trap-neuter-return-making-changes-one-cat-at-a-time/">
+        <article>
+            <h3 >Trap, Neuter, Return: Making Changes One Cat At A Time</h3>
+            <p>
+            The article discusses efforts by the Homeless Animal Rescue Team (HART) to address the feral cat population in Belen, New Mexico, through Trap-Neuter-Return (TNR) programs, where volunteers like Deanna Sauceda work to trap, transport, spay/neuter, and provide medical care to feral cats</p>
+        </article>
+    </a>
+
+    <a class="articleLinks"
+        href="https://www.keloland.com/news/local-news/proposed-bill-will-make-tnr-legal-across-south-dakota/">
+        <article>
+            <h3>Proposed Bill Will Make TNR Legal Across South Dakota</h3>
+            <p>South Dakota lawmakers are proposing a bill to legalize Trap-Neuter-Return (TNR) programs across the state, addressing the issue of feral cat populations, with the Sioux Empire TNR Coalition actively working to control the population through trapping, neutering, and returning the cats.</p>
+        </article>
+    </a>
+  </div>
+  
+    <div class="petition revealable" id="petition">
+
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+
+
+        <div class="petition-para">
+          <!-- info goes here -->
+          Every feline deserves a chance at a healthy and humane life. By supporting our Trap-Neuter-Return (TNR) initiative, you become a vital part of the solution. TNR not only helps control the stray cat population but also ensures their well-being by preventing overpopulation and reducing the risks of disease.
+
+          Take a stand for our furry friends — sign our petition today. Your signature can make a significant impact on the lives of countless cats, creating a community where compassion and responsible care prevail. Together, let's build a future where every cat has a safe and loving environment. 🌟🐈🌟
+        </div>
+
+        <div class="signatures">
+          <p>🖊️ Nilsa from Atlanta supports this.</p>
+          <p>🖊️ Amy from Queens supports this.</p>
+          <p>🖊️ Teresa from Flatbush supports this.</p>
+          <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+        </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <div class="petition-input-box">
+      <form id="sign-petition" title="sign-petition">
+        <!-- inputs go here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+  
+        <label for="city">City:</label>
+        <input type="text" id="city">
+  
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+      </form>
+    </div>
+
+     <!--- Sign Now Button --->
+    <button id="sign-now-button" style="margin-bottom:100px;">Sign Now</button>
+
+  
+  <div class="footer" >
+  
+      <a href="https://www.alleycat.org/resources/how-to-help-community-cats-a-step-by-step-guide-to-trap-neuter-return/"
+        <article>
+          <h2>Educational Resources</h2>
+        </article>
+      </a>
+    
+      <a href="https://lifelineanimal.org/community-cats/" 
+        <article>
+          <h2>Local TNR Organizations</h2>
+        </article>
+      </a>
+    
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+
+</html>
